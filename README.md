@@ -5,4 +5,4 @@
 - Lazarte José Augusto - augusto.lazarte81@gmail.com - 
 - Lelli Florencia - florlelli6@gmail.com - https://github.com/florlelli
 - Linares María Cecilia - mcecilialinares@gmail.com - https://github.com/cecilinares
-- Stella Maris Tita Mascarello - stella.tita@mi.unc.edu.ar - https://github.com/StellaTita
+- Stella Maris Tita Mascarello - 39623753 - stella.tita@mi.unc.edu.ar - https://github.com/StellaTita
