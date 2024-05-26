@@ -119,3 +119,50 @@ Algoritmo AnalisisDeVentas
 		Fin Si
 	Fin Mientras
 FinAlgoritmo
+
+
+
+// Mostrar menú de opciones -florencia gimenez
+Escribir "Bienvenido al Sistema de Análisis de Ventas 
+        Mostrar "Menú del Sistema de Ventas"
+        Mostrar "1. Registrar Venta"
+        Mostrar "2. Registrar Cliente"
+        Mostrar "3. Registrar Empleado"
+        Mostrar "4. Calcular Efectividad de Ventas"
+        Mostrar "5. Salir"
+
+        // Leer la opción del usuario
+        Escribir "Seleccione una opción: "
+        Leer opcion
+
+        // Evaluar la opción seleccionada
+        Segun opcion Hacer
+            Caso 1:
+                // Lógica para registrar venta
+                ventas <- ventas + 1
+                // Aquí puedes agregar la lógica para registrar la venta
+            Caso 2:
+                // Lógica para registrar cliente
+                clientes <- clientes + 1
+                // Aquí puedes agregar la lógica para registrar un nuevo cliente
+            Caso 3:
+                // Lógica para registrar empleado
+                empleados <- empleados + 1
+                // Aquí puedes agregar la lógica para registrar un nuevo empleado
+            Caso 4:
+                // Lógica para calcular la efectividad de ventas
+                Si ventas > 0 Entonces
+                    efectividadVentas <- (ventas / clientes) * 100
+                    Mostrar "La efectividad de ventas es: ", efectividadVentas, "%"
+                Sino
+                    Mostrar "No hay ventas registradas aún."
+                FinSi
+            Caso 5:
+                // Salir del programa
+                Mostrar "Saliendo del sistema..."
+            De Otro Modo:
+                Mostrar "Opción no válida, por favor seleccione una opción del 1 al 5."
+        FinSegun
+    Hasta Que opcion = 5
+
+FinAlgoritmo
