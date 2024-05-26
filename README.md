@@ -137,7 +137,17 @@ FinAlgoritmo
 
 
 __________________________________________________________
-// Mostrar menú de opciones -florencia gimenez
+Algoritmo SistemaDeVentas -Florencia Gimenez
+    // Declaración de variables
+    Definir ventas Como Entero
+    Definir clientes Como Entero
+    Definir empleados Como Entero
+    Definir efectividadVentas Como Real
+
+    // Bucle principal del programa
+    Repetir
+
+// Mostrar menú de opciones 
 Escribir "Bienvenido al Sistema de Análisis de Ventas 
         Mostrar "Menú del Sistema de Ventas"
         Mostrar "1. Registrar Venta"
