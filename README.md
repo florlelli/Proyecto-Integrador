@@ -240,3 +240,29 @@ Algoritmo Menu
 FinAlgoritmo
 
 
+Algoritmo Vendedor
+	Definir cantidad_venta, clientes_atendidos, satisfaccion_cliente Como Entero
+	Definir efectividad_venta Como Real
+	Definir Resultado_satisfacción Como Caracter
+	Escribir "Ingrese cantidad de ventas"
+	Leer cantidad_venta
+	Escribir "Ingrese número de clientes atendidos"
+	Leer clientes_atendidos
+	efectividad_venta=cantidad_venta/clientes_atendidos
+	Escribir "La efectividad de venta del empleado es:", efectividad_venta
+	Escribir "Ingrese su satisfacción de 1 a 5"
+	Si satisfaccion_cliente>3 Entonces
+		Resultado_satisfaccion=Mala
+		Leer Mala
+	FinSi
+	Si satisfaccion_cliente=3 Entonces
+		Resultado_satisfaccion=Regular
+		Leer Regular
+	FinSi
+	Si satisfaccion_cliente<3 Entonces
+		Resultado_satisfaccion=Buena
+		Leer Buena
+	FinSi
+FinAlgoritmo
+
+
