@@ -36,9 +36,10 @@
   - **Apellido:** Tita Mascarello
   - **DNI:** 39623753
   - **Correo Electrónico:** stella.tita@mi.unc.edu.ar
-  - **GitHub:** [StellaMarisTitaMascarello](https://github.com/StellaTita)  
-
-## Descripción del Proyecto
+  - **GitHub:** [StellaMarisTitaMascarello](https://github.com/StellaTita)
+  - 
+___________________________________________________________________________________
+## Descripción del Proyecto stella
 
 Nuestro proyecto consiste en desarrollar un sistema que gestione el proceso de venta y la satisfacción del cliente. Las principales funcionalidades incluyen:
 
@@ -51,8 +52,21 @@ Nuestro proyecto consiste en desarrollar un sistema que gestione el proceso de v
 ## Análisis y Diseño del Proyecto
 
 ### Menú Principal (Pseudocódigo)
+_____________________________________________________ brenda
+
+Análisis: 
+El proyecto se basa en un sistema de gestión de ventas. Se podrá almacenar información sobre ventas, clientes, productos y empleados.
+Las principales funcionalidades son las siguientes:
+- Administrar inventario: Se podrá hacer una gestión sobre el inventario al recopilar información sobre los productos. Guardará su código de producto, nombre, estado de stock, precio.
+- Gestionar ventas: Cada venta se registrará y se podrá hacer un relevamiento con la información administrada para otras funcionalidades. Guardará código de venta, fecha, monto final.
+- Registrar clientes: Guardará nombre, apellido, dni, teléfono, dirección y correo electrónico.
+- Registrar empleados: Guardará código de empleado, nombre, apellido, dni.
+- Satisfacción del cliente: En base a la venta y el cliente guardará un puntaje al rendimiento del empleado para hacer un seguimiento de su desempeño.
+
+
 
 ```pseudocode
+________________________________________________________Stella
 INICIO
     MIENTRAS verdadero
         MOSTRAR "Bienvenido al Sistema de Ventas"
@@ -84,6 +98,7 @@ INICIO
     FIN MIENTRAS
 FIN
 
+____________________________________________________________________
 ### Menú Principal (Pseudocódigo) - Florencia Lelli
 
 ```pseudocode
@@ -121,7 +136,7 @@ Algoritmo AnalisisDeVentas
 FinAlgoritmo
 
 
-
+__________________________________________________________
 // Mostrar menú de opciones -florencia gimenez
 Escribir "Bienvenido al Sistema de Análisis de Ventas 
         Mostrar "Menú del Sistema de Ventas"
@@ -166,3 +181,62 @@ Escribir "Bienvenido al Sistema de Análisis de Ventas
     Hasta Que opcion = 5
 
 FinAlgoritmo
+
+_______________________________________________________________brenda
+Algoritmo Menu
+	Mientras Verdadero
+		Escribir "Bienvenido al menu."
+		Escribir "1. Registrar datos"
+		Escribir "2. Funcionalidades"
+		Escribir "3. Salir"
+		Leer opcion
+		Si opcion = 1
+			Escribir "1. Registrar cliente"
+			Escribir "2. Registrar venta"
+			Escribir "3. Registrar producto"
+			Escribir "4. Registrar empleado"
+			Escribir "5. Registrar valoración de venta"
+			Escribir  "6. Volver"
+			Leer opcion
+			Si opcion = 1
+				Escribir "Implementando función. Registrando cliente."
+			FinSi
+			Si opcion = 2
+				Escribir "Implementando función. Registrando venta."
+			FinSi
+			Si opcion = 3
+				Escribir "Implementando función. Registrando producto."
+			FinSi
+			Si opcion = 4
+				Escribir "Implementando función. Registrando empleado."
+			FinSi
+			Si opcion = 5
+				Escribir "Implementando función. Registrando valoración de venta."
+			FinSi
+			Si opcion = 6
+				Escribir "Volviendo al menu principal."
+			FinSi
+		FinSi
+		Si opcion = 2
+			Escribir "1. Mostrar datos."
+			Escribir "2. Evaluar desempeño de empleado."
+			Escribir "3. Calcular stock de productos."
+			Leer opcion
+			Si opcion = 1
+				Escribir "Implementando función. Mostrando datos."
+			FinSi
+			Si opcion = 2
+				Escribir "Implementando función. Evaluando desempeño de empleado."
+			FinSi
+			Si opcion = 3
+				Escribir "Implementando función. Calculando stock de productos."
+			FinSi
+		FinSi
+		Si opcion = 3
+			Escribir "Break"
+		FinSi
+	FinMientras
+	
+FinAlgoritmo
+
+
