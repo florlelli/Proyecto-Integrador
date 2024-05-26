@@ -98,8 +98,8 @@ INICIO
     FIN MIENTRAS
 FIN
 
-____________________________________________________________________
-### Menú Principal (Pseudocódigo) - Florencia Lelli
+_______________________________________________________________Florencia Lelli
+### Menú Principal (Pseudocódigo) - 
 
 ```pseudocode
 Algoritmo AnalisisDeVentas
@@ -136,8 +136,8 @@ Algoritmo AnalisisDeVentas
 FinAlgoritmo
 
 
-__________________________________________________________
-Algoritmo SistemaDeVentas -Florencia Gimenez
+__________________________________________________________Florencia Gimenez
+Algoritmo SistemaDeVentas 
     // Declaración de variables
     Definir ventas Como Entero
     Definir clientes Como Entero
@@ -192,7 +192,7 @@ Escribir "Bienvenido al Sistema de Análisis de Ventas
 
 FinAlgoritmo
 
-_______________________________________________________________brenda
+_______________________________________________________________Brenda
 Algoritmo Menu
 	Mientras Verdadero
 		Escribir "Bienvenido al menu."
@@ -249,7 +249,7 @@ Algoritmo Menu
 	
 FinAlgoritmo
 
-
+_______________________________________________________________ Augusto Lazarte
 Algoritmo Vendedor
 	Definir cantidad_venta, clientes_atendidos, satisfaccion_cliente Como Entero
 	Definir efectividad_venta Como Real
