@@ -137,18 +137,22 @@ FinAlgoritmo
 
 
 __________________________________________________________Florencia Gimenez
-Algoritmo SistemaDeVentas 
+Algoritmo SistemaDeVentas
     // Declaración de variables
     Definir ventas Como Entero
     Definir clientes Como Entero
     Definir empleados Como Entero
     Definir efectividadVentas Como Real
 
+    // Inicialización de variables
+    ventas <- 0
+    clientes <- 0
+    empleados <- 0
+    efectividadVentas <- 0.0
+
     // Bucle principal del programa
     Repetir
-
-// Mostrar menú de opciones 
-Escribir "Bienvenido al Sistema de Análisis de Ventas 
+        // Mostrar menú de opciones
         Mostrar "Menú del Sistema de Ventas"
         Mostrar "1. Registrar Venta"
         Mostrar "2. Registrar Cliente"
@@ -191,7 +195,6 @@ Escribir "Bienvenido al Sistema de Análisis de Ventas
     Hasta Que opcion = 5
 
 FinAlgoritmo
-
 _______________________________________________________________Brenda
 Algoritmo Menu
 	Mientras Verdadero
