@@ -37,7 +37,17 @@
   - **DNI:** 39623753
   - **Correo Electrónico:** stella.tita@mi.unc.edu.ar
   - **GitHub:** [StellaMarisTitaMascarello](https://github.com/StellaTita)
-  - 
+
+
+
+## Descripción del proyecto
+Nuestro proyecto consiste en desarrollar un sistema que gestione el proceso de venta y la satisfacción del cliente. Las principales funcionalidades incluyen:
+
+- Registro de clientes.
+- Registro de productos.
+- Gestión de ventas.
+- Evaluación de la satisfacción del cliente.
+- Gestión de empleados.
 
 
 
