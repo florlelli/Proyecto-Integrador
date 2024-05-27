@@ -1,8 +1,0 @@
-## Análisis: 
-Se podrá almacenar información sobre ventas, clientes, productos y empleados.
-Las principales funcionalidades son las siguientes:
-- Administrar inventario: Se podrá hacer una gestión sobre el inventario al recopilar información sobre los productos. Guardará su código de producto, nombre, descripción, precio.
-- Gestionar ventas: Cada venta se registrará y se podrá hacer un relevamiento con la información administrada para otras funcionalidades. Guardará código de venta, fecha, monto final.
-- Registrar clientes: Guardará nombre, apellido, dni, teléfono, correo electrónico.
-- Registrar empleados: Guardará código de empleado, nombre, apellido, puesto.
-- Satisfacción del cliente: En base al cliente y al empleado, guardará un puntaje al rendimiento de este para hacer un seguimiento de su desempeño.
