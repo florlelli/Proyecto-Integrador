@@ -39,7 +39,7 @@ def informes():
     print("2. A definir.")
     dato = str(input("Seleccione el informe: "))
     if dato.lower() == "1":   
-        #podemos implementar el algoritmo de gustavo
+        #podemos implementar el algoritmo de augusto
         print("función correspondiente") 
 
 while True:
