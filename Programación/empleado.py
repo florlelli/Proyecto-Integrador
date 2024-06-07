@@ -1,24 +1,35 @@
-empleado = { }
-def agregarEmpleado():
-    id_empleado = input("Ingrese un número identificador de empleado: ")
-    nombre = input("Ingrese el nombre: ")
-    apellido = input("Ingrese el apellido: ")
-    puesto = input("Ingrese el puesto: ")
-    empleado[id_empleado] = {'nombre': nombre, 'apellido': apellido,'puesto': puesto}
+def agregar_empleado():
+    print("Función agregar_empleado llamada.")
 
-def mostrarEmpleado():
-    print("Mostrando todos los empleados:")
-    print(empleado)
+def mostrar_empleados():
+    print("Función mostrar_empleados llamada.")
 
-def modificarEmpleado():
-    dato = str(input(("Escriba el id del empleado: ")))
-    print(empleado[dato])
-    modif = str(input("Escriba qué campo desea modificar: "))
-    empleado[dato][f"{modif}"] = input(f"Ingrese el nuevo {modif}: ")
-    print(f"Modifiación: {empleado[dato]}")
+def modificar_empleado():
+    print("Función modificar_empleado llamada.")
 
-def eliminarEmpleado():
-     eliminar = input("Ingrese el id del empleado: ")
-     print(empleado[eliminar])
-     del empleado[eliminar]
-     print("Eliminado.")
+def eliminar_empleado():
+    print("Función eliminar_empleado llamada.")
+
+def menu_empleados():
+    while True:
+        print("\nMenú Empleados:")
+        print("1. Agregar Empleado")
+        print("2. Mostrar Empleados")
+        print("3. Modificar Empleado")
+        print("4. Eliminar Empleado")
+        print("5. Volver al Menú Principal")
+        opcion = input("Seleccione una opción: ")
+
+        if opcion == "1":
+            agregar_empleado()
+        elif opcion == "2":
+            mostrar_empleados()
+        elif opcion == "3":
+            modificar_empleado()
+        elif opcion == "4":
+            eliminar_empleado()
+        elif opcion == "5":
+            break
+        else:
+            print("Opción no válida. Intente de nuevo.")
+
