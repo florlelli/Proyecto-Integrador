@@ -51,4 +51,15 @@ Nuestro proyecto consiste en desarrollar un sistema que gestione el proceso de v
 
 
 
+## Detalle de la Aplicación Modularizada
+La aplicación se ha estructurado de manera modular para facilitar su mantenimiento y escalabilidad. A continuación, se detalla la estructura de archivos y su contenido:
+
+- **index.py**: Archivo principal de la aplicación. Contiene el menú de opciones y llama a las funciones de los módulos correspondientes.
+- **inventario.py**: Contiene las funciones para administrar el inventario. En esta fase, las funciones solo imprimen mensajes indicativos.
+- **ventas.py**: Contiene las funciones para gestionar las ventas. En esta fase, las funciones solo imprimen mensajes indicativos.
+- **clientes.py**: Contiene las funciones para registrar clientes. En esta fase, las funciones solo imprimen mensajes indicativos.
+- **empleados.py**: Contiene las funciones para registrar empleados. En esta fase, las funciones solo imprimen mensajes indicativos.
+- **satisfaccion.py**: Contiene las funciones para registrar la satisfacción del cliente. En esta fase, las funciones solo imprimen mensajes indicativos.
+
+
 
