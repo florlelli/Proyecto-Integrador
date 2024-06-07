@@ -22,4 +22,3 @@ def eliminarEmpleado():
      print(empleado[eliminar])
      del empleado[eliminar]
      print("Eliminado.")
-     
