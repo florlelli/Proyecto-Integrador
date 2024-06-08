@@ -1,30 +1,34 @@
-cliente = { }
-def agregarCliente():
-    id_cliente = input("Ingrese un número identificador de cliente: ")
-    nombre = input("Ingrese el nombre: ")
-    apellido = input("Ingrese el apellido: ")
-    email = input("Ingrese el email: ")
-    telefono = input("Ingrese el número de teléfono: ")
-    cliente[id_cliente] = {'nombre': nombre, 'apellido': apellido, 'email': email, 'telefono': telefono}
+def agregar_cliente():
+    print("Función agregar_cliente llamada.")
 
-def mostrarCliente():
-    print("Mostrando todos los clientes:")
-    print(cliente)
+def mostrar_clientes():
+    print("Función mostrar_clientes llamada.")
 
-def modificarCliente():
-    dato = str(input(("Escriba el id del cliente: ")))
-    print(cliente[dato])
-    modif = str(input("Escriba qué campo desea modificar: "))
-    cliente[dato][f"{modif}"] = input(f"Ingrese el nuevo {modif}: ")
-    print(f"Modifiación: {cliente[dato]}")
+def modificar_cliente():
+    print("Función modificar_cliente llamada.")
 
-def eliminarCliente():
-     eliminar = input("Ingrese el id del cliente: ")
-     print(cliente[eliminar])
-     del cliente[eliminar]
-     print("Eliminado.")
+def eliminar_cliente():
+    print("Función eliminar_cliente llamada.")
 
-
-
-    
-
+def menu_clientes():
+    while True:
+        print("\nMenú Clientes:")
+        print("1. Agregar Cliente")
+        print("2. Mostrar Clientes")
+        print("3. Modificar Cliente")
+        print("4. Eliminar Cliente")
+        print("5. Volver al Menú Principal")
+        opcion = input("Seleccione una opción: ")
+        
+        if opcion == "1":
+            agregar_cliente()
+        elif opcion == "2":
+            mostrar_clientes()
+        elif opcion == "3":
+            modificar_cliente()
+        elif opcion == "4":
+            eliminar_cliente()
+        elif opcion == "5":
+            break
+        else:
+            print("Opción no válida. Intente de nuevo.")
