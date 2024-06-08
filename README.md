@@ -54,12 +54,36 @@ Nuestro proyecto consiste en desarrollar un sistema que gestione el proceso de v
 ## Detalle de la Aplicación Modularizada
 La aplicación se ha estructurado de manera modular para facilitar su mantenimiento y escalabilidad. A continuación, se detalla la estructura de archivos y su contenido:
 
-- **index.py**: Archivo principal de la aplicación. Contiene el menú de opciones y llama a las funciones de los módulos correspondientes.
-- **inventario.py**: Contiene las funciones para administrar el inventario. En esta fase, las funciones solo imprimen mensajes indicativos.
-- **ventas.py**: Contiene las funciones para gestionar las ventas. En esta fase, las funciones solo imprimen mensajes indicativos.
-- **clientes.py**: Contiene las funciones para registrar clientes. En esta fase, las funciones solo imprimen mensajes indicativos.
-- **empleados.py**: Contiene las funciones para registrar empleados. En esta fase, las funciones solo imprimen mensajes indicativos.
-- **satisfaccion.py**: Contiene las funciones para registrar la satisfacción del cliente. En esta fase, las funciones solo imprimen mensajes indicativos.
+1. **index.py**:
+    - **Descripción**: Este es el archivo principal de la aplicación. Contiene el menú principal desde el cual se puede acceder a la gestión de clientes, empleados, productos, ventas y la generación de informes.
+    - **Funciones**: Implementa el menú principal y llama a los submenús correspondientes.
+
+2. **crud_cliente.py**:
+    - **Descripción**: Este archivo contiene las funciones CRUD (Crear, Leer, Actualizar, Eliminar) para la entidad de Cliente.
+    - **Funciones**: `agregar_cliente`, `mostrar_clientes`, `modificar_cliente`, `eliminar_cliente`, `menu_clientes`.
+    - **Uso**: Gestiona la información de los clientes del comercio.
+
+3. **crud_empleado.py**:
+    - **Descripción**: Este archivo contiene las funciones CRUD para la entidad de Empleado.
+    - **Funciones**: `agregar_empleado`, `mostrar_empleados`, `modificar_empleado`, `eliminar_empleado`, `menu_empleados`.
+    - **Uso**: Gestiona la información de los empleados del comercio.
+
+4. **crud_producto.py**:
+    - **Descripción**: Este archivo contiene las funciones CRUD para la entidad de Producto.
+    - **Funciones**: `agregar_producto`, `mostrar_productos`, `modificar_producto`, `eliminar_producto`, `menu_productos`.
+    - **Uso**: Gestiona la información de los productos disponibles en el comercio.
+
+5. **crud_venta.py**:
+    - **Descripción**: Este archivo contiene las funciones CRUD para la entidad de Venta.
+    - **Funciones**: `registrar_venta`, `mostrar_ventas`, `modificar_venta`, `eliminar_venta`, `menu_ventas`.
+    - **Uso**: Gestiona la información de las ventas realizadas en el comercio.
+
+6. **crud_informes.py**:
+    - **Descripción**: Este archivo contiene la función para la generación de informes.
+    - **Funciones**: `generar_informe`, `menu_informes`.
+    - **Uso**: Permite la generación de informes basados en los datos de ventas.
+
+
 
 
 
