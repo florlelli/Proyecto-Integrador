@@ -58,27 +58,27 @@ La aplicación se ha estructurado de manera modular para facilitar su mantenimie
     - **Descripción**: Este es el archivo principal de la aplicación. Contiene el menú principal desde el cual se puede acceder a la gestión de clientes, empleados, productos, ventas y la generación de informes.
     - **Funciones**: Implementa el menú principal y llama a los submenús correspondientes.
 
-2. **crud_cliente.py**:
+2. **cliente.py**:
     - **Descripción**: Este archivo contiene las funciones CRUD (Crear, Leer, Actualizar, Eliminar) para la entidad de Cliente.
     - **Funciones**: `agregar_cliente`, `mostrar_clientes`, `modificar_cliente`, `eliminar_cliente`, `menu_clientes`.
     - **Uso**: Gestiona la información de los clientes del comercio.
 
-3. **crud_empleado.py**:
+3. **empleado.py**:
     - **Descripción**: Este archivo contiene las funciones CRUD para la entidad de Empleado.
     - **Funciones**: `agregar_empleado`, `mostrar_empleados`, `modificar_empleado`, `eliminar_empleado`, `menu_empleados`.
     - **Uso**: Gestiona la información de los empleados del comercio.
 
-4. **crud_producto.py**:
+4. **producto.py**:
     - **Descripción**: Este archivo contiene las funciones CRUD para la entidad de Producto.
     - **Funciones**: `agregar_producto`, `mostrar_productos`, `modificar_producto`, `eliminar_producto`, `menu_productos`.
     - **Uso**: Gestiona la información de los productos disponibles en el comercio.
 
-5. **crud_venta.py**:
+5. **venta.py**:
     - **Descripción**: Este archivo contiene las funciones CRUD para la entidad de Venta.
     - **Funciones**: `registrar_venta`, `mostrar_ventas`, `modificar_venta`, `eliminar_venta`, `menu_ventas`.
     - **Uso**: Gestiona la información de las ventas realizadas en el comercio.
 
-6. **crud_informes.py**:
+6. **informes.py**:
     - **Descripción**: Este archivo contiene la función para la generación de informes.
     - **Funciones**: `generar_informe`, `menu_informes`.
     - **Uso**: Permite la generación de informes basados en los datos de ventas.
