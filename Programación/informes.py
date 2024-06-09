@@ -4,7 +4,7 @@ def generar_informe():
 def menu_informes():
     while True:
         print("\nMenú Informes:")
-        print("1. Generar Informe")
+        print("1. Generar Informe")  #en la siguiente etapa vamos a desarrollar las funciones de satisfacción_cliente y detalle_venta
         print("2. Volver al Menú Principal")
         opcion = input("Seleccione una opción: ")
 
