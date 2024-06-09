@@ -5,7 +5,7 @@ def menu():
     print("2. Gestionar empleados.")
     print("3. Gestionar productos.")
     print("4. Gestionar ventas.")
-    print("5. Generar informes.")
+    print("5. Generar informes.") #en los informes se encontrarán satisfacción_cliente y detalles_ventas
     print("6. Salir.")
 
 while True:
