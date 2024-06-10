@@ -48,6 +48,7 @@ Nuestro proyecto consiste en desarrollar un sistema que gestione el proceso de v
 - Gestión de ventas.
 - Evaluación de la satisfacción del cliente.
 - Gestión de empleados.
+- Gestión de detalle de venta.
 
 
 
