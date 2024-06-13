@@ -32,13 +32,6 @@
   - **Correo Electrónico:** mcecilialinares@gmail.com
   - **GitHub:** [MaríaCeciliaLinares](https://github.com/cecilinares)
 
-- **Nombre:** Stella Maris
-  - **Apellido:** Tita Mascarello
-  - **DNI:** 39623753
-  - **Correo Electrónico:** stella.tita@mi.unc.edu.ar
-  - **GitHub:** [StellaMarisTitaMascarello](https://github.com/StellaTita)
-
-
 
 ## Descripción del proyecto
 Nuestro proyecto consiste en desarrollar un sistema que gestione el proceso de venta y la satisfacción del cliente. Las principales funcionalidades incluyen:
