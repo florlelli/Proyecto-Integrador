@@ -1,30 +1,30 @@
 import baseDeDatos
 
-def mostrar_ventas():
-    query = "SELECT * FROM ventas"
+def mostrar_supervisor():
+    query = "SELECT * FROM supervisor"
     baseDeDatos.cursor.execute(query)
-    ventas = baseDeDatos.cursor.fetchall()
+    supervisor = baseDeDatos.cursor.fetchall()
     
-    for ventas in ventas:
-        print(ventas)
+    for supervisor in supervisor:
+        print(supervisor)
 
 
-def modificar_venta():
-    print("Función modificar_venta llamada.")
+def modificar_supervisor():
+    print("Función modificar_supervisor llamada.")
 
 def a_definir():
     print("Función llamada.")
 
-def menu_ventas():
+def menu_supervisor():
     while True:
-        print("\nMenú ventas:")
-        print("1. Mostrar ventas.")
+        print("\nMenú supervisor:")
+        print("1. Mostrar supervisor.")
         print("2. A definir.")
         print("3. Volver al Menú Principal")
         opcion = input("Seleccione una opción: ")
         
         if opcion == "1":
-            mostrar_ventas()
+            mostrar_supervisor()
         elif opcion == "2":
             a_definir()
         elif opcion == "3":
