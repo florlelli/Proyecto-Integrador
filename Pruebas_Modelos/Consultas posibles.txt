@@ -1,0 +1,20 @@
+Consultas posibles:
+Satisfacción cliente: Muestra los empleados con puntuación mayor a 5: 
+SELECT * FROM satisfacción_cliente
+WHERE Puntos >= 5;
+
+Efectividad Venta: Mostrar las ventas que hizo un empleado:
+SELECT ventas.* #me toma las tablas de ventas, nomas. Si fuera a poner solo * me mostraría también las de empleados
+FROM ventas
+INNER JOIN empleado ON ventas.Empleado_idEmpleado = empleado.idEmpleado
+WHERE empleado.idEmpleado = 1;
+
+Consulta inner join: Mostrar cuántos empleados hay en cada célula (combina tablas empleados y supervisor) (me muestra la columna del id empleado, el nombre, y todas las columnas de supervisor)
+SELECT empleado.idEmpleado, empleado.Nombre, supervisor.*
+FROM supervisor
+INNER JOIN empleado ON supervisor.Célula = empleado.Supervisor_Célula
+
+Antiguedad: Muestra los empleados con antinguedad mayor a 3 años:
+SELECT *
+FROM empleado
+WHERE DATEDIFF(CURDATE(), Fecha_ingreso) > 1095;
