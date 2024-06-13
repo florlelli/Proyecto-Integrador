@@ -1,5 +1,5 @@
-import clientes, ventas, empleados, productos, detalle_ventas, satisfacción_cliente, supervisor, direcciones
-
+import clientes, ventas, empleados, productos, detalle_ventas, satisfacción_cliente, supervisor, direcciones, consultas
+#como el profe julian dijo que no todas las tablas necesitaban tener un crud decidimos no hacer uno para la tabla "MétodoPago" por su simplicidad. 
 def menu():
     print("1. Gestionar clientes. ")
     print("2. Gestionar empleados.")
@@ -9,13 +9,14 @@ def menu():
     print("6. Gestionar satisfacción de cliente.")
     print("7. Gestionar supervisor")
     print("8. Gestionar direcciones")
-    print("7. Salir.")
+    print("9. Hacer consultas.")
+    print("10. Salir.")
 
 while True:
     menu()
     opcion = int(input("Escriba su opción: "))
     if opcion == 1:
-         clientes.menu_clientes()
+         clientes.menu_clientes()   #cada opcion va a llamar a la tabla correspondinete con el nombre del archivo y va a llamar la función del menu de la misma
     elif opcion == 2:
          empleados.menu_empleados()
     elif opcion == 3:
@@ -29,8 +30,10 @@ while True:
     elif opcion == 7:
          supervisor.menu_supervisor()
     elif opcion == 8:
-         direcciones.menu_direcciones()         
-    elif opcion == 9:
+         direcciones.menu_direcciones()
+    elif opcion == 9:    
+         consultas.menu_consultas()     
+    elif opcion == 10:
         break
     else:
          print("Opción no válida. Intente de nuevo.")

@@ -1,0 +1,5 @@
+SELECT * FROM empleado
+WHERE Fecha_ingreso BETWEEN '20-01-01' AND '23-06-12'
+ORDER BY Fecha_ingreso; 
+
+# CONSULTA FECHA DE INGRESO SUPERIOR A UN AÑO

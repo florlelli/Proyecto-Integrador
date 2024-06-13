@@ -1,30 +1,30 @@
 import baseDeDatos
 
-def mostrar_productos():
-    query = "SELECT * FROM productos"
+def mostrar_detalle_ventas():
+    query = "SELECT * FROM detalle_ventas"
     baseDeDatos.cursor.execute(query)
-    productos = baseDeDatos.cursor.fetchall()
+    detalle_ventas = baseDeDatos.cursor.fetchall()
     
-    for productos in productos:
-        print(productos)
+    for detalle_ventas in detalle_ventas:
+        print(detalle_ventas)
 
 
-def modificar_producto():
-    print("Función modificar_producto llamada.")
+def modificar_detalle_venta():
+    print("Función modificar_detalle_venta llamada.")
 
 def a_definir():
     print("Función llamada.")
 
-def menu_productos():
+def menu_detalle_ventas():
     while True:
-        print("\nMenú productos:")
-        print("1. Mostrar productos.")
+        print("\nMenú detalle_ventas:")
+        print("1. Mostrar detalle_ventas.")
         print("2. A definir.")
         print("3. Volver al Menú Principal")
         opcion = input("Seleccione una opción: ")
         
         if opcion == "1":
-            mostrar_productos()
+            mostrar_detalle_ventas()
         elif opcion == "2":
             a_definir()
         elif opcion == "3":

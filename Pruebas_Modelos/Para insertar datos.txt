@@ -1,0 +1,56 @@
+INSERT INTO clientes (Nombre, Apellido, Correo, Teléfono)
+VALUES ("Olivia", "Gonzalez", "olivia@ejemplo.com", 111222), 
+("Agustina", "Molina", "agusmolina@ejemplo.com", 22211),
+("Juan", "Perez", "juan@ejemplo.com", 2525),
+("Victoria","Martinez", "victoria@ejemplo.com", 101010),
+("Santiago", "Cepeda", "santiago@ejemplo.com", 555000),
+("Pedro", "Garcia", "pedro@ejemplo.com", 999111);
+
+INSERT INTO supervisor (Nombre, Apellido, Célula)
+VALUES ("Verónica", "Aguirre", 1),
+("David", "Arias", 2),
+("Maria", "Escalante", 3);
+
+INSERT INTO métodopago (Tipo)
+VALUES ("Tarjeta de Crédito"),
+("Tarjeta de Débito"),
+("Transferencia"),
+("Efectivo");
+
+INSERT INTO empleado (Nombre, Apellido, Fecha_ingreso, Supervisor_Célula)
+VALUES ("Eduardo", "Lopez", "2024-01-01", 2), 
+("Lucia", "Acuña", "2020-01-02", 3),
+("Rocio", "Pacheco", "2019-05-08", 1),
+("Diego", "Zapata", "2022-09-01", 1), 
+("Jorge", "Suarez", "2024-06-05", 3),
+("Andrea", "Romero", "2019-05-08", 2);
+
+
+INSERT INTO productos (Nombre, Precio)
+VALUES ("Moto E22 64 GB", 175999),
+("Moto G23 128 GB", 247999),
+("Samgsung Galaxy A04 64 GB", 202499),
+("Samsung Galaxy A34 5G 128 GB", 449999),
+("JBL Auricular Quatum Bluetooth", 156999),
+("JBL Auricular TWS Bluetooth", 49999),
+("Motorola 3CS Auriculares con cable", 14399),
+("Motorola XT500+ Aurilares Bluetooth", 53999);
+
+
+INSERT INTO ventas (Fecha, Total, Empleado_idEmpleado, Clientes_idClientes, MétodoPago_idMétodoPago)
+VALUES ('2024-01-02', 175999, 1, 2, 2),
+       ('2024-02-04', 28798, 2, 4, 1);
+
+
+Este me anduvo bien y ahora me de error, lo tengo que ver.
+INSERT INTO detalle_ventas (Ventas_idVentas, Productos_idProductos, Precio, Cantidad)
+VALUES (1, 1, 175999, 1),
+(2, 7, 14399, 2)
+
+Este tambien después dio error. 
+INSERT INTO satisfacción_cliente (Puntos, Clientes_idClientes, Empleado_idEmpleado, Ventas_idVentas)
+VALUES (5, 2, 1, 1),
+(1, 4, 2, 2)
+
+INSERT INTO direcciones (Localidad, Código_Postal, Calle, Clientes_idClientes)
+VALUES ("Córdoba", 5030, "Ejemplo calle 1012", 2);
