@@ -9,7 +9,8 @@ VALUES ("Olivia", "Gonzalez", "olivia@ejemplo.com", NULL),
 INSERT INTO supervisor (Nombre, Apellido, Célula)
 VALUES ("Verónica", "Aguirre", 1),
 ("David", "Arias", 2),
-("Maria", "Escalante", 3);
+("Maria", "Escalante", 3)
+("Fernando", "Perez", 4);
 
 INSERT INTO métodopago (Tipo)
 VALUES ("Tarjeta de Crédito"),
