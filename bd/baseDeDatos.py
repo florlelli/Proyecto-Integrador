@@ -1,8 +1,8 @@
 import mysql.connector
 
 HOST = "localhost"
-USER = "root" #su usuario
-PASSWORD = " " # su contraseña
+USER = "root"   #completar con su usuario
+PASSWORD = " " #completar con su contraseña
 BD = "ventas_satisfacción"
 
 conn = mysql.connector.connect(

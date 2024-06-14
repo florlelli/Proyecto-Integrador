@@ -49,25 +49,4 @@ def eliminar_direccion():
     baseDeDatos.cursor.execute(query,values)
     baseDeDatos.conn.commit()
 
-def menu_direcciones():
-    while True:
-        print("\nMenú direcciones:")
-        print("1. Agregar dirección.") #CREATE crear
-        print("2. Mostrar direcciones.") #READ leer o mostrar
-        print("3. Modificar dirección.") #UPDATE actualizar o modificar
-        print("4. Eliminar dirección.") #DELETE eliminar
-        print("5. Volver al Menú Principal")
-        opcion = input("Seleccione una opción: ")
-        
-        if opcion == "1":
-            agregar_direccion()
-        elif opcion == "2":
-            mostrar_direcciones()
-        elif opcion == "3":
-            modificar_direccion()
-        elif opcion == "4":
-            eliminar_direccion()
-        elif opcion == "5":
-            break
-        else:
-            print("Opción no válida. Intente de nuevo.")
+

@@ -9,7 +9,8 @@ VALUES ("Olivia", "Gonzalez", "olivia@ejemplo.com", NULL),
 INSERT INTO supervisor (Nombre, Apellido, Célula)
 VALUES ("Verónica", "Aguirre", 1),
 ("David", "Arias", 2),
-("Maria", "Escalante", 3);
+("Maria", "Escalante", 3)
+("Fernando", "Perez", 4);
 
 INSERT INTO métodopago (Tipo)
 VALUES ("Tarjeta de Crédito"),
@@ -28,7 +29,7 @@ VALUES ("Eduardo", "Lopez", "2024-01-01", 2),
 INSERT INTO productos (Nombre, Descripción, Precio)
 VALUES ("Moto E22 64 GB", NULL, 175999),
 ("Moto G23 128 GB", NULL, 247999),
-("Samgsung Galaxy A04 64 GB", "Pantalla Infinity-V de 6,5 pulgadas.", 202499),
+("Samsung Galaxy A04 64 GB", "Pantalla Infinity-V de 6,5 pulgadas.", 202499),
 ("Samsung Galaxy A34 5G 128 GB", NULL, 449999),
 ("Moto G41 128 GB", "Pantalla Full HD+ de 6,5 pulgadas.", 279999),
 ("Samsung Galaxy A15 128GB", NULL, 399999),

@@ -55,34 +55,4 @@ def consulta_siete():
     for ventas in ventas:
         print(ventas) 
 
-def menu_consultas():
-    while True:
-        print("\nMenú consultas:")
-        print("1. Consulta: Mostrar los productos que tengan un precio mayor a un valor ingresado.")
-        print("2. Consulta: Mostrar ventas las ventas realizadas entre dos fechas.")
-        print("3. Consulta: Mostrar clientes que tengan teléfonos registrados.")
-        print("4. Consulta: Mostrar empleados por célula.")
-        print("5. Consulta: Mostrar clientes que residan en Córdoba.")
-        print("6. Consulta: Mostrar datos de empleados y supervisores por célula")
-        print("7. Consulta: Mostrar ventas por tipo de pago")
-        print("8. Volver.")
-        opcion = input("Seleccione una opción: ")
-        
-        if opcion == "1":
-            consulta_uno()
-        elif opcion == "2":
-            consulta_dos()
-        elif opcion == "3":
-            consulta_tres()
-        elif opcion == "4":
-            consulta_cuatro()
-        elif opcion == "5":
-            consulta_cinco()
-        elif opcion == "6":
-            consulta_seis()
-        elif opcion == "7":
-            consulta_siete()
-        elif opcion == "8":
-            break
-        else:
-            print("Opción no válida. Intente de nuevo.")
+

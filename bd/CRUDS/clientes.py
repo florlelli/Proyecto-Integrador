@@ -54,25 +54,3 @@ def eliminar_cliente():
     baseDeDatos.conn.commit()
     
 
-def menu_clientes():
-    while True:
-        print("\nMenú Clientes:")
-        print("1. Agregar clientes.") #CREATE crear
-        print("2. Mostrar clientes.") #READ leer o mostrar
-        print("3. Modificar clientes.") #UPDATE actualizar o modificar
-        print("4. Eliminar clientes.") #DELETE eliminar
-        print("5. Volver al Menú Principal")
-        opcion = input("Seleccione una opción: ")
-        
-        if opcion == "1":
-            agregar_cliente()
-        elif opcion == "2":
-            mostrar_clientes()
-        elif opcion == "3":
-            modificar_cliente()
-        elif opcion == "4":
-            eliminar_cliente()    
-        elif opcion == "5":
-            break
-        else:
-            print("Opción no válida. Intente de nuevo.")

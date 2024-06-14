@@ -49,25 +49,3 @@ def eliminar_satisfacción_cliente():
     baseDeDatos.cursor.execute(query,values)
     baseDeDatos.conn.commit()
 
-def menu_satisfacción_cliente():
-    while True:
-        print("\nMenú satisfacción_cliente:")
-        print("1. Agregar satisfacción_cliente.") #CREATE crear
-        print("2. Mostrar satisfacción_clientes.") #READ leer o mostrar
-        print("3. Modificar satisfacción_cliente.") #UPDATE actualizar o modificar
-        print("4. Eliminar satisfacción_cliente.") #DELETE eliminar
-        print("5. Volver al Menú Principal")
-        opcion = input("Seleccione una opción: ")
-        
-        if opcion == "1":
-            agregar_satisfacción_cliente()
-        elif opcion == "2":
-            mostrar_satisfacción_clientes()
-        elif opcion == "3":
-            modificar_satisfacción_cliente()
-        elif opcion == "4":
-            eliminar_satisfacción_cliente()
-        elif opcion == "5":
-            break
-        else:
-            print("Opción no válida. Intente de nuevo.")

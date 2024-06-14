@@ -49,25 +49,3 @@ def eliminar_producto():
     baseDeDatos.cursor.execute(query,values)
     baseDeDatos.conn.commit()
 
-def menu_productos():
-    while True:
-        print("\nMenú productos:")
-        print("1. Agregar producto.") #CREATE crear
-        print("2. Mostrar productos.") #READ leer o mostrar
-        print("3. Modificar producto.") #UPDATE actualizar o modificar
-        print("4. Eliminar producto.") #DELETE eliminar
-        print("5. Volver al Menú Principal")
-        opcion = input("Seleccione una opción: ")
-        
-        if opcion == "1":
-            agregar_producto()
-        elif opcion == "2":
-            mostrar_productos()
-        elif opcion == "3":
-            modificar_producto()
-        elif opcion == "4":
-            eliminar_producto()
-        elif opcion == "5":
-            break
-        else:
-            print("Opción no válida. Intente de nuevo.")

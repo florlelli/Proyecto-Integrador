@@ -49,26 +49,5 @@ def eliminar_empleado():
     baseDeDatos.cursor.execute(query,values)
     baseDeDatos.conn.commit()
 
-def menu_empleados():
-    while True:
-        print("\nMenú empleados:")
-        print("1. Agregar empleado.") #CREATE crear
-        print("2. Mostrar empleados.") #READ leer o mostrar
-        print("3. Modificar empleado.") #UPDATE actualizar o modificar
-        print("4. Eliminar empleado.") #DELETE eliminar
-        print("5. Volver al Menú Principal")
-        opcion = input("Seleccione una opción: ")
-        
-        if opcion == "1":
-            agregar_empleado()
-        elif opcion == "2":
-            mostrar_empleados()
-        elif opcion == "3":
-            modificar_empleado()
-        elif opcion == "4":
-            eliminar_empleado()
-        elif opcion == "5":
-            break
-        else:
-            print("Opción no válida. Intente de nuevo.")
+
 
