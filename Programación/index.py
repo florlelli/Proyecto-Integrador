@@ -5,7 +5,7 @@ def menu():
     print("2. Gestionar empleados.")
     print("3. Gestionar productos.")
     print("4. Gestionar ventas.")
-    print("5. Generar detalle de ventas.")
+    print("5. Gestionar detalle de ventas.")
     print("6. Gestionar satisfacción de cliente.")
     print("7. Gestionar supervisor")
     print("8. Gestionar direcciones")
