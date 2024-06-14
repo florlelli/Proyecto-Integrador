@@ -26,10 +26,30 @@ def mostrar_detalle_ventas():
 
 
 def modificar_detalle_venta():
-    print("Función modificar_detalle_venta llamada.")
+    id = input("Ingrese el id de la venta: ")
+    print("Ingrese qué desea cambiar: ")
+    print("Productos_idProductos, Precio, Cantidad, Descuento")
+    columna = input("Ingrese qué desea cambiar: ")
+    cambio = input("Ingrese el cambio: ")
+    
+    columnas_permitidas = ["Productos_idProductos", "Precio", "Cantidad", "Descuento"]
+    if columna not in columnas_permitidas: 
+        print("La columna ingresada no es válida.")
+        return
+    
+    query = "UPDATE detalle_ventas SET {} = %s WHERE Ventas_idVentas = %s".format(columna)
+    values = (cambio, id)
+ 
+    baseDeDatos.cursor.execute(query, values) 
+    baseDeDatos.conn.commit()
 
-def a_definir():
-    print("Función llamada.")
+def eliminar_detalle_venta():
+    id = int(input("Ingrese el id de la venta: "))
+    query = "DELETE FROM detalle_ventas WHERE Ventas_idVentas = %s"
+    values = (id,)
+
+    baseDeDatos.cursor.execute(query,values)
+    baseDeDatos.conn.commit()
 
 def menu_detalle_ventas():
     while True:
@@ -46,9 +66,9 @@ def menu_detalle_ventas():
         elif opcion == "2":
             mostrar_detalle_ventas()
         elif opcion == "3":
-            a_definir()
+            modificar_detalle_venta()
         elif opcion == "4":
-            a_definir()
+            eliminar_detalle_venta()
         elif opcion == "5":
             break
         else:

@@ -23,11 +23,31 @@ def mostrar_direcciones():
         print(direcciones)
 
 
-def modificar_direcciones():
-    print("Función modificar_direcciones llamada.")
+def modificar_direccion():
+    id = input("Ingrese el id de la dirección: ")
+    print("Ingrese qué desea cambiar: ")
+    print("Localidad - Código_Postal - Calle - Clientes_idClientes")
+    columna = input("Ingrese qué desea cambiar: ")
+    cambio = input("Ingrese el cambio: ")
+    
+    columnas_permitidas = ["Localidad", "Código_Postal", "Calle", "Clientes_idClientes"]
+    if columna not in columnas_permitidas: 
+        print("La columna ingresada no es válida.")
+        return
+    
+    query = "UPDATE direcciones SET {} = %s WHERE idDirecciones = %s".format(columna)
+    values = (cambio, id)
+ 
+    baseDeDatos.cursor.execute(query, values) 
+    baseDeDatos.conn.commit()
 
-def a_definir():
-    print("Función llamada.")
+def eliminar_direccion():
+    id = int(input("Ingrese el id de la dirección: "))
+    query = "DELETE FROM direcciones WHERE idDirecciones = %s"
+    values = (id,)
+
+    baseDeDatos.cursor.execute(query,values)
+    baseDeDatos.conn.commit()
 
 def menu_direcciones():
     while True:
@@ -44,9 +64,9 @@ def menu_direcciones():
         elif opcion == "2":
             mostrar_direcciones()
         elif opcion == "3":
-            a_definir()
+            modificar_direccion()
         elif opcion == "4":
-            a_definir()
+            eliminar_direccion()
         elif opcion == "5":
             break
         else:
