@@ -41,6 +41,9 @@ Nuestro proyecto consiste en desarrollar un sistema que gestione el proceso de v
 - Evaluación de la satisfacción del cliente.
 - Gestión de empleados.
 - Gestión de detalle de venta.
+- Gestión de supervisores.
+- Gestión de direcciones del cliente.
+- Gestión de método de pago.
 
 ## Detalle de la Aplicación Modularizada
 La aplicación se ha estructurado de manera modular para facilitar su mantenimiento y escalabilidad. A continuación, se detalla la estructura de archivos y su contenido:
@@ -69,10 +72,30 @@ La aplicación se ha estructurado de manera modular para facilitar su mantenimie
     - **Funciones**: `registrar_venta`, `mostrar_ventas`, `modificar_venta`, `eliminar_venta`, `menu_ventas`.
     - **Uso**: Gestiona la información de las ventas realizadas en el comercio.
 
-6. **informes.py**:
-    - **Descripción**: Este archivo contiene la función para la generación de informes.
-    - **Funciones**: `generar_informe`, `menu_informes`.
-    - **Uso**: Permite la generación de informes basados en los datos de ventas.
+6. **detalle_ventas.py**:
+    - **Descripción**: Este archivo contiene las funciones CRUD para la entidad de detalle_ventas.
+    - **Funciones**: `registrar_detalle_ventas`, `mostrar_detalle_ventas`, `modificar_detalle_venta`, `eliminar_detalle_venta`, `menu_detalle_ventas`.
+    - **Uso**: Gestiona la información del detalle de las ventas realizadas en el comercio.
+    - 
+7. **satisfacción_cliente.py**:
+    - **Descripción**: Este archivo contiene las funciones CRUD para la entidad de satisfacción_cliente.
+    - **Funciones**: `registrar_satisfacción_cliente`, `mostrar_satisfacción_cliente`, `modificar_satisfacción_cliente`, `eliminar_satisfacción_cliente`, `menu_satisfacción_cliente`.
+    - **Uso**: Gestiona el puntaje que recibe el empleado de un cliente al realizarse una venta.
+    - 
+8. **direcciones.py**:
+    - **Descripción**: Este archivo contiene las funciones CRUD para la entidad de direcciones.
+    - **Funciones**: `registrar_direcciones`, `mostrar_direcciones`, `modificar_direcciones, `eliminar_direcciones`, `menu_direcciones`.
+    - **Uso**: Gestiona la información del domicilio de los clientes.
+
+9. **supervisor.py**:
+    - **Descripción**: Este archivo contiene las funciones CRUD para la entidad de Supervisor.
+    - **Funciones**: `registrar_supervisor`, `mostrar_supervisores`, `modificar_supervisor`, `eliminar_supervisor`, `menu_supervisor`.
+    - **Uso**: Gestiona la información de los supervisores del comercio.
+      
+10. **consultas.py**:
+    - **Descripción**: Este archivo contiene las consultas que ejecutan SQL dentro de Python.
+    - **Funciones**: Contiene siete consultas.
+    - **Uso**: Muestra informes específicos.
 
 ## Uso de la Aplicación
 Para ejecutar la aplicación, usa el siguiente comando en la terminal:
@@ -94,12 +117,15 @@ El repositorio está organizado de la siguiente manera:
    - **empleado.py**: Funciones CRUD para la entidad Empleado.
    - **producto.py**: Funciones CRUD para la entidad Producto.
    - **venta.py**: Funciones CRUD para la entidad Venta.
-   - **informes.py**: Generación de informes.
+   - **detalle_venta.py**: Funciones CRUD para la entidad detalle_ventas.
 
 2. **Carpeta bd**: Contiene los scripts SQL para la base de datos y los diagramas de entidad-relación.
 
-   - **estructura.sql**: Script para crear la estructura de la base de datos.
-   - **datos_iniciales.sql**: Script para insertar datos iniciales en la base de datos.
+   - **ventas_satisfacción.sql**: Script para crear la estructura de la base de datos.
+   - **datos.ql**: Script para insertar datos iniciales en la base de datos.
+   - **consultas sql.sql**: Scrip de las consultas para la base de datos.
+   - **Diagrama Crowfoot png**
+   - **Diagrama Entidad Relación**
 
 3. **Archivo README.md**: Contiene la descripción del proyecto, instrucciones de uso y detalles de instalación.
 
