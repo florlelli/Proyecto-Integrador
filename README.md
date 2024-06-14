@@ -32,7 +32,6 @@
   - **Correo Electrónico:** mcecilialinares@gmail.com
   - **GitHub:** [MaríaCeciliaLinares](https://github.com/cecilinares)
 
-
 ## Descripción del proyecto
 Nuestro proyecto consiste en desarrollar un sistema que gestione el proceso de venta y la satisfacción del cliente. Las principales funcionalidades incluyen:
 
@@ -42,8 +41,6 @@ Nuestro proyecto consiste en desarrollar un sistema que gestione el proceso de v
 - Evaluación de la satisfacción del cliente.
 - Gestión de empleados.
 - Gestión de detalle de venta.
-
-
 
 ## Detalle de la Aplicación Modularizada
 La aplicación se ha estructurado de manera modular para facilitar su mantenimiento y escalabilidad. A continuación, se detalla la estructura de archivos y su contenido:
@@ -77,7 +74,35 @@ La aplicación se ha estructurado de manera modular para facilitar su mantenimie
     - **Funciones**: `generar_informe`, `menu_informes`.
     - **Uso**: Permite la generación de informes basados en los datos de ventas.
 
+## Uso de la Aplicación
+Para ejecutar la aplicación, usa el siguiente comando en la terminal:
 
+sh
+Copiar código
+python index.py
+Sigue las instrucciones en pantalla para navegar por el menú principal y gestionar las diferentes entidades.
+
+## Base de Datos
+Diseñamos una base de datos MySQL siguiendo el modelo entidad-relación (DER) y convertimos este modelo en un modelo relacional. La base de datos contiene tablas para cada entidad con relaciones bien definidas. También hemos incluido scripts SQL para crear la estructura de la base de datos, insertar datos iniciales y realizar consultas.
+
+## Navegación del Repositorio
+El repositorio está organizado de la siguiente manera:
+
+-**Carpeta aplicacion**: Contiene todos los archivos fuente .py.
+
+index.py: Archivo principal de la aplicación.
+cliente.py: Funciones CRUD para la entidad Cliente.
+empleado.py: Funciones CRUD para la entidad Empleado.
+producto.py: Funciones CRUD para la entidad Producto.
+venta.py: Funciones CRUD para la entidad Venta.
+informes.py: Generación de informes.
+
+-**Carpeta bd**: Contiene los scripts SQL para la base de datos y los diagramas de entidad-relación.
+
+estructura.sql: Script para crear la estructura de la base de datos.
+datos_iniciales.sql: Script para insertar datos iniciales en la base de datos.
+
+-**Archivo README.md**: Contiene la descripción del proyecto, instrucciones de uso y detalles de instalación.
 
 
 
