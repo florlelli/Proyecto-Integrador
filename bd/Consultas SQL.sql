@@ -38,5 +38,9 @@ INNER JOIN empleado ON satisfacción_cliente.Empleado_idEmpleado = empleado.idEm
 WHERE satisfacción_cliente.Puntos > 4
 ORDER BY empleado.idEmpleado;
 
-
+#8. Una sola tabla con group by usando alguna función agregada.
+#Muestra las sumatoria de todas las ventas que se hiceron por mes.
+SELECT MONTH(Fecha) AS Mes, SUM(Total) AS Ventas_totales
+FROM ventas
+GROUP BY MONTH(Fecha);
 
