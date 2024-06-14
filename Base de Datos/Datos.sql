@@ -38,21 +38,21 @@ VALUES ("Moto E22 64 GB", NULL, 175999),
 
 
 INSERT INTO ventas (Fecha, Total, Empleado_idEmpleado, Clientes_idClientes, MétodoPago_idMétodoPago)
-VALUES ('2024-01-02', 175999, 1, 2, 2), #compró 1 producto id 17
-       ('2024-01-04', 495998, 2, 4, 1), #compró 2 productos id 18
-	   ('2024-02-01', 399999, 1, 5, 3), #compró 1 producto id 22
-       ('2024-02-10', 607497, 3, 1, 3), #compró 3 productos id 19
-       ('2024-02-08', 449999, 4, 3, 4), #compró 1 producto id 20 
-       ('2024-01-10', 1199997, 2, 2, 1); #compró 3 productos id 22
+VALUES ('2024-01-02', 175999, 1, 2, 2), #compró 1 producto id 1
+       ('2024-01-04', 495998, 2, 4, 1), #compró 2 productos id 2
+	   ('2024-02-01', 399999, 1, 5, 3), #compró 1 producto id 6
+       ('2024-02-10', 607497, 3, 1, 3), #compró 3 productos id 3
+       ('2024-02-08', 449999, 4, 3, 4), #compró 1 producto id 4 
+       ('2024-01-10', 1199997, 2, 2, 1); #compró 3 productos id 6
 
 
 INSERT INTO detalle_ventas (Ventas_idVentas, Productos_idProductos, Precio, Cantidad, Descuento)
-VALUES (1, 17, 175999, 1, NULL),
-(2, 18, 247999, 2, NULL),
-(3, 22, 399999, 1, NULL),
-(4, 19, 202499, 3, NULL),
-(5, 20, 449999, 1, NULL),
-(6, 22, 39999, 3, NULL);
+VALUES (1, 1, 175999, 1, NULL),
+(2, 2, 247999, 2, NULL),
+(3, 6, 399999, 1, NULL),
+(4, 3, 202499, 3, NULL),
+(5, 4, 449999, 1, NULL),
+(6, 6, 39999, 3, NULL);
 
 
 INSERT INTO satisfacción_cliente (Puntos, Clientes_idClientes, Empleado_idEmpleado, Ventas_idVentas)
