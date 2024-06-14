@@ -87,21 +87,21 @@ Diseñamos una base de datos MySQL siguiendo el modelo entidad-relación (DER) y
 ## Navegación del Repositorio
 El repositorio está organizado de la siguiente manera:
 
-- **Carpeta aplicacion**: Contiene todos los archivos fuente .py.
+1. **Carpeta aplicacion**: Contiene todos los archivos fuente .py.
 
- - **index.py**: Archivo principal de la aplicación.
- - **cliente.py**: Funciones CRUD para la entidad Cliente.
- - **empleado.py**: Funciones CRUD para la entidad Empleado.
- - **producto.py**: Funciones CRUD para la entidad Producto.
- - **venta.py**: Funciones CRUD para la entidad Venta.
- - **informes.py**: Generación de informes.
+   - **index.py**: Archivo principal de la aplicación.
+   - **cliente.py**: Funciones CRUD para la entidad Cliente.
+   - **empleado.py**: Funciones CRUD para la entidad Empleado.
+   - **producto.py**: Funciones CRUD para la entidad Producto.
+   - **venta.py**: Funciones CRUD para la entidad Venta.
+   - **informes.py**: Generación de informes.
 
-- **Carpeta bd**: Contiene los scripts SQL para la base de datos y los diagramas de entidad-relación.
+2. **Carpeta bd**: Contiene los scripts SQL para la base de datos y los diagramas de entidad-relación.
 
- - **estructura.sql**: Script para crear la estructura de la base de datos.
- - **datos_iniciales.sql**: Script para insertar datos iniciales en la base de datos.
+   - **estructura.sql**: Script para crear la estructura de la base de datos.
+   - **datos_iniciales.sql**: Script para insertar datos iniciales en la base de datos.
 
-- **Archivo README.md**: Contiene la descripción del proyecto, instrucciones de uso y detalles de instalación.
+3. **Archivo README.md**: Contiene la descripción del proyecto, instrucciones de uso y detalles de instalación.
 
 
 
