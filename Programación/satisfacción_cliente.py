@@ -24,10 +24,30 @@ def mostrar_satisfacción_clientes():
 
 
 def modificar_satisfacción_cliente():
-    print("Función modificar_satisfacción_cliente llamada.")
+    id = input("Ingrese el id de satisfacción_cliente: ")
+    print("Ingrese qué desea cambiar: ")
+    print("Puntos - Clientes_idClientes - Empleado_idEmpleado - Ventas_idVentas")
+    columna = input("Ingrese qué desea cambiar: ")
+    cambio = input("Ingrese el cambio: ")
+    
+    columnas_permitidas = ["Puntos", "Clientes_idClientes", "Empleado_idEmpleado", "Ventas_idVentas"]
+    if columna not in columnas_permitidas: 
+        print("La columna ingresada no es válida.")
+        return
+    
+    query = "UPDATE satisfacción_cliente SET {} = %s WHERE idSatisfacción_Cliente = %s".format(columna)
+    values = (cambio, id)
+ 
+    baseDeDatos.cursor.execute(query, values) 
+    baseDeDatos.conn.commit()
 
-def a_definir():
-    print("Función llamada.")
+def eliminar_satisfacción_cliente():
+    id = int(input("Ingrese el id satisfacción_cliente: "))
+    query = "DELETE FROM satisfacción_cliente WHERE idSatisfacción_Cliente = %s"
+    values = (id,)
+
+    baseDeDatos.cursor.execute(query,values)
+    baseDeDatos.conn.commit()
 
 def menu_satisfacción_cliente():
     while True:
@@ -44,9 +64,9 @@ def menu_satisfacción_cliente():
         elif opcion == "2":
             mostrar_satisfacción_clientes()
         elif opcion == "3":
-            a_definir()
+            modificar_satisfacción_cliente()
         elif opcion == "4":
-            a_definir()
+            eliminar_satisfacción_cliente()
         elif opcion == "5":
             break
         else:

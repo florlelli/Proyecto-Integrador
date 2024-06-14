@@ -65,7 +65,7 @@ def menu_ventas():
         elif opcion == "2":
             mostrar_ventas()
         elif opcion == "3":
-            eliminar_venta()
+            modificar_venta()
         elif opcion == "4":
             eliminar_venta()
         elif opcion == "5":
